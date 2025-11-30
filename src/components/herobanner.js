@@ -1,4 +1,4 @@
-import herobanner from "../assests/herobannerimage.jpg"
+
 export default function HeroBanner(){
     return(
     <div className="herobanner w-[100vw] bg-[oklch(0.21_0.06_258.54)] text-white p-[20px] flex flex-col gap-[40px]">

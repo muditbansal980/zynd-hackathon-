@@ -1,8 +1,7 @@
 import menu from "../assests/menu.png";
 import { useState } from "react";
 
-export default function Sidebar() {
-    const Side=document.querySelector("items")
+export default function Sidebar() {    git add .
     const [display, setDisplay]=useState(false);
     return (
         <div className="sidebar sm:hidden">
