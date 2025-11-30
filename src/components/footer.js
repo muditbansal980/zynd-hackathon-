@@ -25,7 +25,7 @@ export default function Footer() {
             <div className="text-[white]">
                 <h className="font-bold hover:cursor-pointer">Some Important Links</h>
                 <ul>
-                    <li href="https://www.mygov.in/" className=" hover:cursor-pointer" >MyGov.in</li>
+                    <li className=" hover:cursor-pointer"><a href="https://www.mygov.in/">MyGov.in</a></li>
                 </ul>
             </div>
             <div className="connect gap-[10px] col-span-3 justify-center items-center">
