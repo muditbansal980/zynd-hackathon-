@@ -11,7 +11,7 @@ export default function navbar() {
             </div>
             <div className="elements hidden sm:block">
                 <ul className="flex gap-[30px] text-white">
-                    <li className="hover:cursor-pointer">Homee</li>
+                    <li className="hover:cursor-pointer">Home</li>
                     <li className="hover:cursor-pointer">Check ELigibility</li>
                     <li className="hover:cursor-pointer">Benefits</li>
                     <li className="hover:cursor-pointer">My Applications</li>
