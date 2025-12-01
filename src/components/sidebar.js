@@ -1,6 +1,6 @@
 import menu from "../assests/menu.png";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Sidebar() {  
     const [display, setDisplay]=useState(false);
@@ -12,22 +12,22 @@ export default function Sidebar() {
             <div className={`items ${display ? '' : 'hidden'}`}>
                 <ul className="text-white">
                     <li className="hover:cursor-pointer">
-                        <Link to="/">Home</Link>
+                        <NavLink className={({isActive}) => `hover:cursor-pointer ${isActive ? "text-blue-400 font-bold" : "text-white"}`} to="/">Home</NavLink>
                     </li>
                     <li className="hover:cursor-pointer">
-                        <Link to="/CheckEligibility">Check Eligibility</Link>
+                        <NavLink className={({isActive}) => `hover:cursor-pointer ${isActive ? "text-blue-400 font-bold" : "text-white"}`} to="/CheckEligibility">Check Eligibility</NavLink>
                     </li>
                     <li className="hover:cursor-pointer">
-                        <Link to="/Benefits">Benefits</Link>
+                        <NavLink className={({isActive}) => `hover:cursor-pointer ${isActive ? "text-blue-400 font-bold" : "text-white"}`} to="/Benefits">Benefits</NavLink>
                     </li>
                     <li className="hover:cursor-pointer">
-                        <Link to="/InterpretLaw">Interpretation of Law</Link>
+                        <NavLink className={({isActive}) => `hover:cursor-pointer ${isActive ? "text-blue-400 font-bold" : "text-white"}`} to="/InterpretLaw">Interpretation of Law</NavLink>
                     </li>
                     <li className="hover:cursor-pointer">
-                        <Link to="/MyApplications">My Applications</Link>
+                        <NavLink className={({isActive}) => `hover:cursor-pointer ${isActive ? "text-blue-400 font-bold" : "text-white"}`}   to="/MyApplications">My Applications</NavLink>
                     </li>
                     <li className="hover:cursor-pointer">
-                        <Link to="/Profile">Profile</Link>
+                        <NavLink className={({isActive}) => `hover:cursor-pointer ${isActive ? "text-blue-400 font-bold" : "text-white"}`} to="/Profile">Profile</NavLink>
                     </li>
                 </ul>
             </div>

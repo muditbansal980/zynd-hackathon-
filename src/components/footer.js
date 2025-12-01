@@ -1,9 +1,10 @@
-import Instagram from "../assests/instagram.png"
-import Linkedin from "../assests/linkedin.png"
-import Twitter from "../assests/twitter.png"
+import Instagram from "../assests/instagram.png";
+import Linkedin from "../assests/linkedin.png";
+import Twitter from "../assests/twitter.png";
+
 export default function Footer() {
     return (
-        <div className="footer bg-[oklch(0.21_0.06_258.54)] grid grid-cols-3 grid-rows-2 mt-[40px] p-[30px] ">
+        <div className="footer bg-[oklch(0.21_0.06_258.54)] grid grid-cols-3 grid-rows-2 mt-[40px] p-[30px] w-[full] ">
             <div className="text-[white]">
                 <h className="font-bold">Let us help you</h>    
                 <ul>
