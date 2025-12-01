@@ -5,21 +5,22 @@ import Benefits from "./components/Benefits"
 import MyApplications from "./components/MyApplications"
 import Profile from "./components/Profile"
 import InterpretLaw from "./components/InterpretLaw"
+import Footer from "./components/footer"
 import { createBrowserRouter,RouterProvider } from "react-router-dom";
 
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element:<><Navbar/><Home /></>
+      element:<><Navbar/><Home /><Footer/></>
     },
     {
       path: "/CheckEligibility",
-      element:<> <Navbar/><CheckEligibility /></>
+      element:<> <Navbar/><CheckEligibility /><Footer/></>
     },
     {
       path: "/Benefits",
-      element:<> <Navbar/>< Benefits/></>
+      element:<> <Navbar/>< Benefits/><Footer/></>
     },
     {
       path: "/MyApplications",
@@ -27,11 +28,11 @@ function App() {
     },
     {
       path:"/Profile",
-      element:<><Navbar/><Profile/></>
+      element:<><Navbar/><Profile/><Footer/></>
     },
     {
       path:"/InterpretLaw",
-      element:<><Navbar/><InterpretLaw/></>
+      element:<><Navbar/><InterpretLaw/><Footer/></>
     }
 
   ])
