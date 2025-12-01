@@ -4,7 +4,7 @@ export default function Problems() {
             <div className="flex justify-center items-center m-[30px]">
                 <h1 className="text-[32px] font-bold">Key Challenges</h1>
             </div>
-            <div className="grid gap-[20px] grid-cols-1 sm:grid-cols-2 max-[1464px]:grid-cols-3 lg:grid-cols-4 auto-rows-auto">
+            <div className="grid gap-[20px] max-[640px]:grid-cols-1 sm:grid-cols-2 max-[1464px]:grid-cols-3 lg:grid-cols-4 auto-rows-auto">
                 <div className="border-[2px] border-black p-[20px] w-full max-w-[350px] h-[350px] mx-auto">
                     <div><h1 className="text-[32px] font-bold">Complex Policies</h1></div>
                     <div className="text-[28px] flex justify-center items-center">
