@@ -5,7 +5,7 @@ export default function features() {
                 <h1 className="text-[32px] font-bold">Features</h1>
             </div>
             {/* <div className="grid min-[1600px]:grid-cols-4 min-[1200px]:grid-cols-3 grid-rows-1 min-[800px]:grid-cols-2 grid-rows-2 min-[0px]:grid-cols-1 grid-rows-4 gap-[20px]"> */}
-            <div className="grid gap-[20px] grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 auto-rows-auto">    
+            <div className="grid gap-[20px] grid-cols-1 sm:grid-cols-2 max-[1464px]:grid-cols-3 lg:grid-cols-4 auto-rows-auto">    
                 <div className="border-[2px] border-black p-[20px] w-full max-w-[350px] h-[350px] mx-auto">
                     <div><h1 className="text-[32px] font-bold">📑 Policy Summaries</h1></div>
                     <div><p className="text-[20px]">Government policies are too long and difficult to interpret</p></div>

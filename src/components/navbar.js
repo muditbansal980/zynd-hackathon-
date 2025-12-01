@@ -1,6 +1,7 @@
-import profile from "../assests/user.png"
-import Sidebar from "../components/sidebar"
-export default function navbar() {
+import Sidebar from "./sidebar";
+import profile from "../assests/user.png";
+import {Link} from "react-router-dom"
+export default function Navbar() {
     return (
         <div className="navbar flex justify-between p-[20px] bg-[purple]">
 
@@ -9,15 +10,17 @@ export default function navbar() {
                 <h1>Logo</h1>
 
             </div>
-            <div className="elements hidden sm:block">
-                <ul className="flex gap-[30px] text-white">
-                    <li className="hover:cursor-pointer">Home</li>
-                    <li className="hover:cursor-pointer">Check ELigibility</li>
-                    <li className="hover:cursor-pointer">Benefits</li>
-                    <li className="hover:cursor-pointer">My Applications</li>
-                    <li className="w-[24px]"><img src={profile} alt="profile" /></li>
+
+            <nav className="elements hidden sm:block">
+                <ul className="flex gap-[30px] text-white items-center">
+                    <Link to="/" className="hover:cursor-pointer">Home</Link>
+                    <Link to="/CheckEligibility" className="hover:cursor-pointer">Check Eligibility</Link>
+                    <Link to="/Benefits"  className="hover:cursor-pointer">Benefits</Link>
+                    <Link to="/InterpretLaw" className="hover:cursor-pointer">Interpretation of Law</Link>
+                    <Link to="/MyApplications" className="hover:cursor-pointer">My Applications</Link>
+                    <Link to="/Profile" className="w-[24px]"><img src={profile} alt="profile" /></Link>
                 </ul>
-            </div>
+            </nav>
         </div>
-    )
+    );
 }
