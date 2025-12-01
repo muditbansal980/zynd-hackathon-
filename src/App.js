@@ -5,7 +5,6 @@ import Benefits from "./components/Benefits"
 import MyApplications from "./components/MyApplications"
 import Profile from "./components/Profile"
 import InterpretLaw from "./components/InterpretLaw"
-import {Link} from "react-router-dom"
 import { createBrowserRouter,RouterProvider } from "react-router-dom";
 
 function App() {
