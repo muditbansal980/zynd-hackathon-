@@ -1,5 +1,6 @@
 import menu from "../assests/menu.png";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Sidebar() {  
     const [display, setDisplay]=useState(false);
@@ -11,19 +12,22 @@ export default function Sidebar() {
             <div className={`items ${display ? '' : 'hidden'}`}>
                 <ul className="text-white">
                     <li className="hover:cursor-pointer">
-                        <button>Home</button>
+                        <Link to="/">Home</Link>
                     </li>
                     <li className="hover:cursor-pointer">
-                        <button>Check Eligibility</button>
+                        <Link to="/CheckEligibility">Check Eligibility</Link>
                     </li>
                     <li className="hover:cursor-pointer">
-                        <button>Benefits </button>
+                        <Link to="/Benefits">Benefits</Link>
                     </li>
                     <li className="hover:cursor-pointer">
-                        <button>My Applications</button>
+                        <Link to="/InterpretLaw">Interpretation of Law</Link>
                     </li>
                     <li className="hover:cursor-pointer">
-                        <button>Profile</button>
+                        <Link to="/MyApplications">My Applications</Link>
+                    </li>
+                    <li className="hover:cursor-pointer">
+                        <Link to="/Profile">Profile</Link>
                     </li>
                 </ul>
             </div>
