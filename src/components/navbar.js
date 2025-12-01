@@ -1,8 +1,8 @@
 import Sidebar from "./sidebar";
 import profile from "../assests/user.png";
-import { Link } from "react-router-dom"
+// import { Link } from "react-router-dom"
 import { NavLink } from "react-router-dom";
-import Home from "./Home";
+// import Home from "./Home";
 export default function Navbar() {
     return (
         <div className="navbar flex justify-between p-[20px] bg-[purple]">
