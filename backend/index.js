@@ -69,9 +69,9 @@ app.post("/signup",async (req,res)=>{
     })
     return res.status(201).json({"Entry":"Registered"})
 })
-app.get("/SignUp",async (req,res)=>{
-    return res.redirect('/Home');
-})
+// app.post("/signup",async (req,res)=>{
+//     return res.redirect('/Home');
+// })
 
 
 app.listen(9000, () => {
