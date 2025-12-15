@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require ("cors")
 const mongoose = require('mongoose');
-
+require("dotenv").config();
 const app = express()
 
 //middle wares
@@ -12,7 +12,7 @@ app.use(cors());
 
 //Connection of mongoose
 mongoose
-    .connect("mongodb://127.0.0.1:27017/database-name-zynd-hack")
+    .connect(process.env.MONGO_URL)
     .then(() => console.log("Mongoose Connected"))
     .catch((err) => console.log("Mongoose Connection Failed", err))
 
