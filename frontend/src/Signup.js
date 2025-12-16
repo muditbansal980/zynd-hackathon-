@@ -33,7 +33,7 @@ export default function SignUp() {
 
         const data = await res.json();
         console.log(data);
-        // alert(res.status)
+        console.log(res.status)
         if(res.ok){
             navigate('/Home');
         }
